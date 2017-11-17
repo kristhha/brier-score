@@ -1,0 +1,39 @@
+{
+  "name": "brier-score",
+  "version": "0.0.1",
+  "description": "Calculate Brier Scores",
+  "main": "build/index.js",
+  "scripts": {
+    "babel-node": "babel-node",
+    "dev": "watch 'yarn run build' src",
+    "start": "nodemon --exec yarn run babel-node -- src/index.js",
+    "build": "babel src -d build",
+    "test": "jest --coverage",
+    "test:watch": "yarn test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristhha/brier-score.git"
+  },
+  "keywords": [
+    "brier",
+    "score",
+    "statistics",
+    "probability",
+    "accuracy",
+    "predictions"
+  ],
+  "author": "Kristian H. Hagen (kristhha.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kristhha/brier-score/issues"
+  },
+  "homepage": "https://github.com/kristhha/brier-score#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^21.2.1",
+    "nodemon": "^1.12.1",
+    "watch": "^1.0.2"
+  }
+}
